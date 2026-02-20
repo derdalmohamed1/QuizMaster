@@ -1,25 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from "react-router-dom";
+import Login from "./auth/Login";
+import Dashboard from "./dashboard/Dashboard";
+import Quiz from "./quiz/Quiz";
+import MemoryGame from "./games/MemoryGame";
+import MathChallenge from "./games/MathChallenge";
+import WordScramble from "./games/WordScramble";
+import ProtectedRoute from "./Error404/ProtectedRoote";
+import NotFound from "./Error404/NotFound";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+
+      {/* الصفحة الافتراضية */}
+      <Route path="/" element={<Navigate to="/login" replace />} />
+
+      <Route path="/login" element={<Login />} />
+
+      <Route
+        path="/dashboard"
+        element={
+          <ProtectedRoute>
+            <Dashboard />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/quiz"
+        element={
+          <ProtectedRoute>
+            <Quiz />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/games/memory"
+        element={
+          <ProtectedRoute>
+            <MemoryGame />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/games/math"
+        element={
+          <ProtectedRoute>
+            <MathChallenge />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/games/word"
+        element={
+          <ProtectedRoute>
+            <WordScramble />
+          </ProtectedRoute>
+        }
+      />
+
+      {/* صفحة 404 */}
+      <Route path="*" element={<NotFound />} />
+      
+    </Routes>
   );
 }
-
-export default App;
