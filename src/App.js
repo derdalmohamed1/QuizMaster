@@ -12,7 +12,7 @@ export default function App() {
   return (
     <Routes>
 
-      {/* الصفحة الافتراضية */}
+      {/* default page*/}
       <Route path="/" element={<Navigate to="/login" replace />} />
 
       <Route path="/login" element={<Login />} />
@@ -62,7 +62,7 @@ export default function App() {
         }
       />
 
-      {/* صفحة 404 */}
+      {/*error page*/}
       <Route path="*" element={<NotFound />} />
       
     </Routes>
