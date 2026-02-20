@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/QuizMaster/static/css/main.b41c6c33.css",
+    "main.js": "/QuizMaster/static/js/main.4a3c9aa6.js",
+    "static/media/quizGame.png": "/QuizMaster/static/media/quizGame.8fa3cc2943da2a03d8f2.png",
+    "static/media/correct_answer.mp3": "/QuizMaster/static/media/correct_answer.46ef8ff0da83ba08e65e.mp3",
+    "static/media/wordScramble.png": "/QuizMaster/static/media/wordScramble.3b10a88f8e1e2536ec28.png",
+    "static/media/clear.png": "/QuizMaster/static/media/clear.c457ade14be4910a0920.png",
+    "static/media/memory.png": "/QuizMaster/static/media/memory.340c4bc5cc074e2eb8e3.png",
+    "static/media/logout.png": "/QuizMaster/static/media/logout.42f6b395718051ee8b66.png",
+    "static/media/math.png": "/QuizMaster/static/media/math.208b8ab77e1f4ab86d7e.png",
+    "static/media/worng_answer.mp3": "/QuizMaster/static/media/worng_answer.836d44bdeb10a3b2315b.mp3",
+    "index.html": "/QuizMaster/index.html",
+    "main.b41c6c33.css.map": "/QuizMaster/static/css/main.b41c6c33.css.map",
+    "main.4a3c9aa6.js.map": "/QuizMaster/static/js/main.4a3c9aa6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b41c6c33.css",
+    "static/js/main.4a3c9aa6.js"
+  ]
+}
